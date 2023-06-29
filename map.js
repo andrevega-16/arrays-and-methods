@@ -3,7 +3,7 @@
 // ---------------
 // Fns definitions
 // ---------------
-function myMap (arr, callback) {
+function myFilter (arr, callback) {
     const newArray = [];
 
     for (let index = 0; index < arr.length; index++) {
@@ -34,7 +34,7 @@ function callback (number, index, arr) {
 }
 
 const newNumbers = numbers.map(callback);
-const newNumbersCust = myMap(numbers, callback);
+const newNumbersCust = myFilter(numbers, callback);
 const newNumbersProt = numbers.map(callback);
 
 console.log(numbers)
